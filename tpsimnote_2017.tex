@@ -1,0 +1,61 @@
+\documentclass{ATLAS_latex/atlasnote} 
+\skipbeforetitle{-5pt}
+
+\usepackage{graphicx,multirow}
+\usepackage{epstopdf}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{pdfpages,subfigure,caption,placeins}
+\usepackage{color}
+
+\newcommand{\red}[1]{\textcolor[rgb]{1,0,0}{#1}}
+
+\input{tex/definitions}
+\input{tex/prd_definitions}
+
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{totalnumber}{5}
+\setcounter{topnumber}{4}
+
+\bibliographystyle{apsrev}
+
+\title {Simple Simulation of the Micromegas Trigger at High Rates, and a Proposal for Improving the $\phi$ Measurement}
+
+\usepackage{authblk}
+\renewcommand\Authands{, } % avoid ``. and'' for last author
+\renewcommand\Affilfont{\itshape\small} % affiliation formatting
+\author[a,b]{J.~Farah}
+\author[a]{N.~Felt}
+\author[a]{M.~Franklin}
+\author[a]{P.~Giromini}
+\author[a]{J.~Philion}
+\author[a]{A.~Tuna}
+\author[a]{A.~Wang}
+\affil[a]{Harvard University, Cambridge, Massachusetts 02138, USA}
+\affil[b]{University of Massachusetts Boston, Boston, Massachusetts 02125, USA}
+
+\abstracttext{\noindent We simulated the MM Trigger Processor at high rates. We can improve the non-precision measurement dramatically.}
+
+\clearpage
+
+\begin{document} 
+
+\setcounter{page}{2}
+
+\input{tex/introduction}
+\input{tex/experiment}
+\input{tex/hllhc}
+\input{tex/sim}
+\input{tex/smallroads}
+\input{tex/resources}
+\input{tex/conclusion}
+
+\clearpage
+
+\input{tex/bibliography}
+
+\end{document} 
+
