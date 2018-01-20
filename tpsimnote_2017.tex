@@ -22,22 +22,27 @@
 
 \bibliographystyle{apsrev}
 
-\title {Simple Simulation of the Micromegas Trigger at High Rates, and a Proposal for Improving the $\phi$ Measurement}
+\title { Diamond-paved roads and a steaming soup: the architecture of an upgraded Micromegas trigger processor and an optimization tool}
+%that 
+%mitigates the degradation of the {\boldmath $\eta$} and {\boldmath $\phi$} resolutions
+%caused by the expected background rates}
 
 \usepackage{authblk}
 \renewcommand\Authands{, } % avoid ``. and'' for last author
 \renewcommand\Affilfont{\itshape\small} % affiliation formatting
-\author[a,b]{J.~Farah}
 \author[a]{N.~Felt}
 \author[a]{M.~Franklin}
 \author[a]{P.~Giromini}
-\author[a]{J.~Philion}
 \author[a]{A.~Tuna}
 \author[a]{A.~Wang}
 \affil[a]{Harvard University, Cambridge, Massachusetts 02138, USA}
 \affil[b]{University of Massachusetts Boston, Boston, Massachusetts 02125, USA}
 
-\abstracttext{\noindent We simulated the MM Trigger Processor at high rates. We can improve the non-precision measurement dramatically.}
+\abstracttext{\noindent We have developed a simple simulation tool, HOTPOT, to investigate the performance of
+ the Micromegas trigger processor (MMTP) in the presence of the uncorrelated-background rate expected at the high-luminosity LHC.
+  The study was motivated by our measurement of the MMTP  spatial resolution using the Harvard octuplet and cosmic rays.
+ Having  observed that the MMTP  architecture outlined in the NSW TDR already loses efficiency and spatial resolution because of the irreducible background due to $\delta$ rays, we  simulate the effect of the expected uncorrelated background overlapping muon signals, and find
+  that the performance of the planned MMTP scheme is severely degraded. Therefore, we propose a new architecture which is less affected by the presence of this background and present its expected performance. }
 
 \clearpage
 
@@ -46,12 +51,14 @@
 \setcounter{page}{2}
 
 \input{tex/introduction}
-\input{tex/experiment}
+%\input{tex/experiment}
 \input{tex/hllhc}
 \input{tex/sim}
 \input{tex/nominal}
 \input{tex/smallroads}
-\input{tex/resources}
+\input{tex/roadcoord}
+\input{tex/trigrate}
+\input{tex/multistage}
 \input{tex/conclusion}
 
 \clearpage
